@@ -23,3 +23,4 @@ Simple and easy to use notifications for your .NET Projects.
         notify.Show("Title", "Text", style, design)
 ```
 
+![alt text](https://i.imgur.com/TS0tTL3.gif)
