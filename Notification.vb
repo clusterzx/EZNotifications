@@ -12,7 +12,7 @@
 '   |_____/ \___|_| |_|_| |_|_|___/ |____/ \___|\___|_| |_|\___|_|   
 '    ................................................................                                                                
 '   |----------------------------------------------------------------|
-'   | LICENSE : MIT https://https://choosealicense.com/licenses/mit/ |                                              |
+'   | LICENSE : MIT https://choosealicense.com/licenses/mit/         |
 '   | DATE : 27.01.2018                                              |
 '   | WEBSITE : https://bech0r.net                                   |
 '   | GITHUB : https://github.com/clusterzx                          |
