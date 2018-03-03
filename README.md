@@ -1,6 +1,6 @@
 # EZNotifications
 
-Simple and easy to use notifications for your .NET Projects.
+Simple and easy to use notifications for your VB.NET / C# Projects.
 
 # Installation / How to use
 
@@ -24,3 +24,5 @@ Simple and easy to use notifications for your .NET Projects.
 ```
 
 ![alt text](https://i.imgur.com/TS0tTL3.gif)
+
+notifications, simple, fancy, vb.net, c#
