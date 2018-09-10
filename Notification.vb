@@ -1,24 +1,12 @@
-﻿'     _____          _          _   _                                
-'    / ____|        | |        | | | |                               
-'   | |     ___   __| | ___  __| | | |__  _   _                      
-'   | |    / _ \ / _` |/ _ \/ _` | | '_ \| | | |                     
-'   | |___| (_) | (_| |  __/ (_| | | |_) | |_| |                     
-'    \_____\___/ \__,_|\___|\__,_| |_.__/ \__, |                     
-'    _____                   _       ____  __/ |     _               
-'   |  __ \                 (_)     |  _ \|___/     | |              
-'   | |  | | ___ _ __  _ __  _ ___  | |_) | ___  ___| |__   ___ _ __ 
-'   | |  | |/ _ \ '_ \| '_ \| / __| |  _ < / _ \/ __| '_ \ / _ \ '__|
-'   | |__| |  __/ | | | | | | \__ \ | |_) |  __/ (__| | | |  __/ |   
-'   |_____/ \___|_| |_|_| |_|_|___/ |____/ \___|\___|_| |_|\___|_|   
 '    ................................................................                                                                
 '   |----------------------------------------------------------------|
 '   | LICENSE : MIT https://choosealicense.com/licenses/mit/         |
 '   | DATE : 27.01.2018                                              |
-'   | WEBSITE : https://bech0r.net                                   |
 '   | GITHUB : https://github.com/clusterzx                          |
 '   |----------------------------------------------------------------|
 '    """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 '
+
 
 Imports System.Runtime.InteropServices
 Imports System.Drawing.Color
@@ -72,13 +60,14 @@ Public Class EZNotification
         CreateForm(fstyle, fdesign)
     End Sub
     Private Sub CreateForm(notification_style As Style, ByVal notification_design As FormDesign)
-        If notification_style.ToString = "CriticalError" Then
-            image_choosen = image_error
-        ElseIf notification_style.ToString = "Exclamation" Then
-            image_choosen = image_warning
-        ElseIf notification_style.ToString = "Information" Then
-            image_choosen = image_info
-        End If
+        Select Case notification_style
+            Case Style.CriticalError
+                image_choosen = image_error
+            Case Style.Exclamation
+                image_choosen = image_warning
+            Case Style.Information
+                image_choosen = image_info
+        End Select
 
         If notification_design.ToString = "Bright" Then
             FormDesign1.frm_background = Color.White
